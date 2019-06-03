@@ -13,7 +13,6 @@ state = {}
     this._getMovies();
   }
 
-
   
    _getMovies = async () =>{
     const movies = await this._callApi()
