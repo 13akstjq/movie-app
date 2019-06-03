@@ -14,6 +14,7 @@ state = {}
   }
 
 
+  
    _getMovies = async () =>{
     const movies = await this._callApi()
     console.log(movies);
