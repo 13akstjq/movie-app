@@ -6,12 +6,12 @@ function Movie({title , poster,genres,synopsis}){
     return(
         <div className="Movie">
             <div className="Movie__Columns">
-                <MoviePoster poster={poster} alt={title}></MoviePoster>
+                <MoviePoster class="Movie__Poster" poster={poster} alt={title}></MoviePoster>
             </div>
             <div className="Movie__Columns">
                 <h1>{title}</h1>
                 <div className="Movie__Genres">
-                    {genres.map((genre,index) => <MovieGenre genre={genre} key={index}></MovieGenre>)}
+                    {genres.map((genre,index) => <MovieGenre class="Movie__Genres" genre={genre} key={index}></MovieGenre>)}
                 </div>
                 <div className="Movie__synopsis">
                     {synopsis}

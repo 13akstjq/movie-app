@@ -1,0 +1,15 @@
+body{
+    background-color: #eff3f7;
+}
+.App{
+    padding : 60px;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content: space-around;
+}
+.Loading--App{
+    display: flex;
+    height : 100%;
+    justify-content: center;
+    align-items: center;
+}

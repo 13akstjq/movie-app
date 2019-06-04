@@ -1,0 +1,47 @@
+
+
+.Movie{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width : 40%;
+    padding: 0 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 38px rgba(133, 133, 133, 0.3), 0 5px 12px rgba(133, 133, 133,0.22);
+}
+
+.Movie__Columns { 
+    width : 30%;
+    box-sizing: border-box;
+}
+
+.Movie__Columns:last-child{
+    width : 60%;
+    padding : 20px 0;
+}
+
+.Movie__Poster{
+    max-width: 100%;
+    position: relative;
+    top : -20px;
+     box-shadow: 0 8px 38px rgba(133, 133, 133, 0.3), 0 5px 12px rgba(133, 133, 133,0.22);
+}
+
+.Movie__Genres{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color : #b4b5bd;
+}
+
+.Movie__Genres .Movie__Genre{
+    margin-right: 10px;
+    color : #b4b5bd;
+}
+
+.Movie__synopsis{
+    color : #b4b5bd;
+}
+
