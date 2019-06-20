@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Movie.css';
-
+import LinesEllipsis from 'react-lines-ellipsis';
 function Movie({title , poster,genres,synopsis}){
     return(
         <div className="Movie">
@@ -14,7 +14,13 @@ function Movie({title , poster,genres,synopsis}){
                     {genres.map((genre,index) => <MovieGenre class="Movie__Genres" genre={genre} key={index}></MovieGenre>)}
                 </div>
                 <div className="Movie__synopsis">
-                    {synopsis}
+                    <LinesEllipsis
+                    text={synopsis}
+                    maxLine='3'
+                    ellipsis='...'
+                    trimRight
+                    basedOn='letters'
+                    />
                 </div>
             </div>
         </div>

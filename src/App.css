@@ -1,15 +1,22 @@
 body{
     background-color: #eff3f7;
 }
-.App{
+/* .App{
     padding : 60px;
     display : flex;
     flex-wrap : wrap;
     justify-content: space-around;
-}
+} */
 .Loading--App{
     display: flex;
     height : 100vh;
     justify-content: center;
     align-items: center;
+}
+
+.App {
+    padding : 60px;
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: space-around;
 }

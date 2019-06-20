@@ -22,7 +22,7 @@ state = {}
     })
   }
   _callApi = () =>{
-    return fetch('https://yts.am/api/v2/list_movies.json?sort_by=like_count')
+    return fetch('https://yts.lt/api/v2/list_movies.json?sort_by=like_count')
     .then(response => response.json())
     .then(json => json.data.movies)
     .catch(err => console.log(err))
